@@ -1,96 +1,91 @@
 # H ∈ M — Household Expense Management
 
-H ∈ M is a household finance management application for recording income, expenses, loans, savings, budgets, and shared household transactions.
+H ∈ M is a household finance management application for families, couples, and shared households. It brings income, expenses, loans, savings, budgets, and household transactions into one clear place.
 
-## Phase 1 status
+## What it helps you do
 
-This repository preserves the original working prototype and establishes a maintainable project structure without migrating the technology stack or changing the existing visual identity.
+- Understand how much money comes in and goes out
+- Record household income and daily spending
+- Track loans, savings, bills, and payment status
+- Compare planned budgets with actual spending
+- See spending by month, category, member, and transaction type
+- Search, edit, and review household transactions
+- Import existing CSV or Excel records
+- Export transactions and reports
+- Create backups before making major changes
+- Share a household ledger with members using different access roles
 
-The preserved prototype is available at [prototype/budget-dashboard-new.html](prototype/budget-dashboard-new.html). It remains a standalone vanilla HTML, CSS, and JavaScript application and is not overwritten by the Phase 1 organisation work.
+## Main dashboard
 
-## Existing features
+The dashboard gives a quick view of:
 
-- Dashboard KPIs and Chart.js visualisations
-- Income, expense, loan, and savings tracking
-- Budget-versus-actual calculations
-- Monthly, member, type, category, and detail reports
-- Transaction search, sorting, pagination, editing, and deletion
-- CSV and Excel import/export
-- JSON backup and restore
-- Admin, editor, and viewer roles
-- Household member invitations
-- Local browser storage fallback
-- Optional REST API and Firebase integration paths
-- Responsive layout and reduced-motion support
+- Total income
+- Expenses and loan repayments
+- Savings
+- Remaining balance
+- Budget and actual spending
+- Paid and unpaid amounts
+- Monthly and category trends
+- Member-wise spending
 
-## Technology
+## Frontend
 
-The current prototype uses:
+The application is a browser-based frontend made with:
 
-- Vanilla HTML, CSS, and JavaScript
-- Chart.js for charts
-- SheetJS for spreadsheet import/export
-- Browser LocalStorage and SessionStorage fallback
-- Optional Firebase Auth/Firestore integration
-- Optional REST API integration
+- HTML for the application screens
+- CSS for the responsive layout and visual design
+- JavaScript for calculations, forms, reports, and interactions
+- Chart.js for financial charts
+- SheetJS for Excel import and export
 
-Phase 1 intentionally does not introduce a framework, backend migration, or build system.
+The H ∈ M logo and existing application colours are part of the visual identity.
 
-## Repository structure
+## Download and use
 
-```text
-household-expense-management/
-├── README.md
-├── .env.example
-├── .gitignore
-├── prototype/
-│   └── budget-dashboard-new.html
-├── src/
-│   ├── assets/
-│   └── styles/
-│       └── tokens.css
-├── docs/
-│   ├── audit-report.md
-│   ├── architecture.md
-│   ├── deployment.md
-│   ├── requirements.md
-│   ├── security.md
-│   └── source-materials/
-├── firebase/
-└── tests/
-```
+### Windows
 
-## Run the prototype
+1. Open the private repository on GitHub:
+   <https://github.com/KANDE-BALA-GURU-CHARAN/household-expense-management>
+2. Select **Code**, then **Download ZIP**.
+3. Extract the ZIP file.
+4. Open the `prototype` folder.
+5. Double-click `budget-dashboard-new.html`.
+6. Use a modern browser such as Microsoft Edge, Google Chrome, or Firefox.
 
-The prototype can be opened directly in a modern browser:
+### macOS
 
-1. Open `prototype/budget-dashboard-new.html`.
-2. Create a local account or sign in.
-3. Use the sample data option to explore the dashboard.
+1. Open the repository on GitHub.
+2. Select **Code**, then **Download ZIP**.
+3. Open the downloaded ZIP file.
+4. Open the `prototype` folder.
+5. Double-click `budget-dashboard-new.html`.
+6. Use Safari, Google Chrome, or Firefox.
 
-For browser features that require an HTTP origin, serve the repository with any static file server and open the prototype path. No package installation is required for the preserved prototype.
+No separate installation is required for the browser version. The application stores local demonstration data in the browser used to open it. Do not use local browser storage as a secure replacement for a production financial service.
 
-Firebase and REST API integrations are opt-in. Do not place production credentials in the HTML file or commit them to this repository. See [.env.example](.env.example) and [docs/deployment.md](docs/deployment.md).
+## Use on a mobile phone
 
-## Design tokens
+The interface is responsive and can be opened in a mobile browser:
 
-The existing palette is documented as reusable CSS custom properties in [src/styles/tokens.css](src/styles/tokens.css). These values are copied from the prototype and are intended to prevent accidental visual drift. Phase 1 does not change the prototype theme.
+1. Open the repository or deployed application link on your phone.
+2. Sign in or create a local account.
+3. Use the menu button to move between Dashboard, Data entry, Reports, Transactions, People, and Import & backup.
+4. Rotate the phone to landscape when viewing wide tables or charts.
 
-The H ∈ M mark is provided in [src/assets/hm-logo.svg](src/assets/hm-logo.svg). It uses the existing ink, marigold, green, violet, and brick palette.
+The current project is a web application, not a separately installed Android or iOS application. A future release may add an installable mobile experience.
 
-## Roadmap
+## Project contents
 
-1. **Phase 1 — Preserve and organise:** completed in this repository.
-2. **Phase 2 — Stabilise core behaviour:** validation, save/retry handling, invitation rollback, import validation, and focused tests.
-3. **Phase 3 — Complete core requirements:** category budgets, alerts, date-range filters, PDF export, and improved contribution reporting.
-4. **Phase 4 — Planned features:** recurring transactions, reminders, notifications, receipts, savings goals, and settings.
-5. **Phase 5 — Production readiness:** server-side authorisation, security rules, migrations, backups, CI, accessibility, and deployment.
-
-## Documentation
-
+- [Prototype application](prototype/budget-dashboard-new.html)
+- [H ∈ M logo](src/assets/hm-logo.svg)
+- [Design tokens](src/styles/tokens.css)
 - [Audit report](docs/audit-report.md)
-- [Architecture](docs/architecture.md)
+- [Architecture notes](docs/architecture.md)
 - [Requirements](docs/requirements.md)
-- [Security](docs/security.md)
-- [Deployment](docs/deployment.md)
+- [Security notes](docs/security.md)
+- [Deployment notes](docs/deployment.md)
+
+## Important note
+
+The current repository contains the existing working application. Planned improvements will strengthen validation, synchronisation, security, budgets, alerts, reminders, and production readiness without unnecessarily replacing the working household-finance experience.
 
