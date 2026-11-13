@@ -1,0 +1,24 @@
+/*
+ * H ∈ M design tokens.
+ * These values are intentionally aligned with the preserved prototype.
+ * Do not change them without an approved visual-design decision.
+ */
+:root {
+  --hm-ink: #0F2A31;
+  --hm-ink-2: #1B424B;
+  --hm-ink-3: #27565F;
+  --hm-canvas: #E7ECEA;
+  --hm-paper: #FFFFFF;
+  --hm-rule: #C7D3D0;
+  --hm-rule-soft: #E0E7E5;
+  --hm-slate: #5F7377;
+  --hm-slate-2: #84979A;
+  --hm-marigold: #E29A17;
+  --hm-green: #1D7A5B;
+  --hm-brick: #B0432C;
+  --hm-violet: #5B4B8A;
+  --hm-sans: "IBM Plex Sans", system-ui, sans-serif;
+  --hm-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --hm-serif: "Instrument Serif", Georgia, serif;
+}
+

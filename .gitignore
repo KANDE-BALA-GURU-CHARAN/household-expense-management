@@ -1,0 +1,28 @@
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+
+# Logs, caches, and generated output
+*.log
+coverage/
+dist/
+build/
+node_modules/
+.cache/
+
+# Local backups and user data
+*.backup
+*.bak
+budget-backup-*.json
+
