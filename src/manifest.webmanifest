@@ -1,0 +1,17 @@
+{
+  "name": "H ∈ M — Household Expense Management",
+  "short_name": "H ∈ M",
+  "description": "A household income, expense, budget, savings, and loan ledger.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#E7ECEA",
+  "theme_color": "#0F2A31",
+  "icons": [
+    {
+      "src": "assets/hm-logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -48,8 +48,8 @@ The H ∈ M logo and existing application colours are part of the visual identit
    <https://github.com/KANDE-BALA-GURU-CHARAN/household-expense-management>
 2. Select **Code**, then **Download ZIP**.
 3. Extract the ZIP file.
-4. Open the `prototype` folder.
-5. Double-click `budget-dashboard-new.html`.
+4. Open the `src` folder.
+5. Double-click `index.html`.
 6. Use a modern browser such as Microsoft Edge, Google Chrome, or Firefox.
 
 ### macOS
@@ -57,8 +57,8 @@ The H ∈ M logo and existing application colours are part of the visual identit
 1. Open the repository on GitHub.
 2. Select **Code**, then **Download ZIP**.
 3. Open the downloaded ZIP file.
-4. Open the `prototype` folder.
-5. Double-click `budget-dashboard-new.html`.
+4. Open the `src` folder.
+5. Double-click `index.html`.
 6. Use Safari, Google Chrome, or Firefox.
 
 No separate installation is required for the browser version. The application stores local demonstration data in the browser used to open it. Do not use local browser storage as a secure replacement for a production financial service.
@@ -76,7 +76,8 @@ The current project is a web application, not a separately installed Android or 
 
 ## Project contents
 
-- [Prototype application](prototype/budget-dashboard-new.html)
+- [Original application](prototype/budget-dashboard-new.html)
+- [Browser release](src/index.html)
 - [H ∈ M logo](src/assets/hm-logo.svg)
 - [Design tokens](src/styles/tokens.css)
 - [Audit report](docs/audit-report.md)
@@ -87,5 +88,5 @@ The current project is a web application, not a separately installed Android or 
 
 ## Important note
 
-The current repository contains the existing working application. Planned improvements will strengthen validation, synchronisation, security, budgets, alerts, reminders, and production readiness without unnecessarily replacing the working household-finance experience.
+The current repository contains the original application and a deployable browser release. The release uses local browser storage and is intended for personal or demonstration use. Planned improvements will strengthen validation, synchronisation, security, budgets, alerts, reminders, and production readiness without unnecessarily replacing the working household-finance experience.
 
