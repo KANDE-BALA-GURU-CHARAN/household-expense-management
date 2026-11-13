@@ -1,6 +1,6 @@
-# H ∈ M — Household Expense Management
+# H E M — Household Expense Management
 
-H ∈ M is a household finance management application for families, couples, and shared households. It brings income, expenses, loans, savings, budgets, and household transactions into one clear place.
+H E M is a household finance management application for families, couples, and shared households. It brings income, expenses, loans, savings, budgets, and household transactions into one clear place.
 
 ## What it helps you do
 
@@ -37,8 +37,6 @@ The application is a browser-based frontend made with:
 - JavaScript for calculations, forms, reports, and interactions
 - Chart.js for financial charts
 - SheetJS for Excel import and export
-
-The H ∈ M logo and existing application colours are part of the visual identity.
 
 ## Download and use
 
@@ -78,7 +76,6 @@ The current project is a web application, not a separately installed Android or 
 
 - [Original application](prototype/budget-dashboard-new.html)
 - [Browser release](src/index.html)
-- [H ∈ M logo](src/assets/hm-logo.svg)
 - [Design tokens](src/styles/tokens.css)
 - [Audit report](docs/audit-report.md)
 - [Architecture notes](docs/architecture.md)
@@ -89,4 +86,3 @@ The current project is a web application, not a separately installed Android or 
 ## Important note
 
 The current repository contains the original application and a deployable browser release. The release uses local browser storage and is intended for personal or demonstration use. Planned improvements will strengthen validation, synchronisation, security, budgets, alerts, reminders, and production readiness without unnecessarily replacing the working household-finance experience.
-
