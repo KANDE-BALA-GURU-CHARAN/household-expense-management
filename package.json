@@ -1,0 +1,8 @@
+{
+  "name": "household-expense-management",
+  "private": true,
+  "description": "H ∈ M household finance management browser application",
+  "scripts": {
+    "test": "node tests/smoke.mjs"
+  }
+}
