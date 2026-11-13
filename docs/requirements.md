@@ -1,40 +1,37 @@
-# Requirements
+# Product requirements
 
-## Implemented in the prototype
+## Core purpose
 
-- Account setup and sign-in flows
-- Household membership and roles
-- Income, expense, loan, and savings transaction records
-- Dashboard KPIs and charts
-- Budget-versus-actual reporting
+H ∈ M should give a household one dependable place to record money coming in, money going out, planned budgets, savings, loans, and payment obligations.
+
+## Available today
+
+- Account access and household roles
+- Income, expense, loan, and savings records
+- Dashboard totals and charts
+- Budget-versus-actual comparisons
 - Monthly, member, type, category, and detail reports
 - Search, filtering, sorting, and pagination
 - CSV and Excel import/export
 - JSON backup and restore
-- Responsive interface
+- Responsive desktop and mobile layout
 
-## Required but incomplete
+## Planned improvements
 
-- Category management
-- Monthly budgets per category
-- Budget threshold alerts
-- Bill payment reminders
-- Recurring transactions
-- Notifications and summaries
+- Separate category and monthly budget management
+- Warnings when spending approaches or exceeds a budget
+- Recurring transactions and bill reminders
+- Notifications and spending summaries
 - Receipt attachments
 - PDF report export
-- Currency and date preferences
-- Profile and settings management
-- Automated backups
-- Production-grade server-side authorisation
+- Currency, date, and profile settings
+- Stronger shared storage, synchronisation, and access control
 
-## Non-functional requirements
+## Product qualities
 
-- Preserve the existing visual identity and colour palette.
-- Keep the application usable on desktop, tablet, and mobile.
-- Protect household data with server-enforced access controls.
-- Avoid silent save failures and data loss.
-- Validate imports, backups, and user-entered values.
-- Keep calculations deterministic and testable.
-- Maintain a documented, modular structure without an unnecessary framework migration.
+- Clear enough for all household members
+- Useful on Windows, macOS, tablets, and mobile browsers
+- Consistent with the existing visual identity
+- Careful with financial calculations and user data
+- Able to grow without unnecessarily replacing the current application
 

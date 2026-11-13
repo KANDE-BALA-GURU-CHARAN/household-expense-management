@@ -1,41 +1,22 @@
-# Architecture
+# Product architecture
 
-## Current prototype
+H ∈ M is a browser-based household finance application. The user interface provides the dashboard, transaction forms, reports, charts, household member management, and import/export tools.
 
-The preserved prototype is a standalone HTML document containing:
+## Application areas
 
-- HTML views and forms
-- CSS layout, responsive rules, and theme
-- JavaScript state and derived calculations
-- Chart.js rendering
-- SheetJS import/export
-- LocalStorage/SessionStorage fallback
-- Optional REST API integration
-- Optional Firebase Auth/Firestore integration
-- Client-side encryption helpers for the Firebase ledger
+- **Dashboard:** financial summary and visual trends
+- **Transactions:** income, expenses, loans, savings, payment status, and dates
+- **Reports:** monthly, member, type, category, and detailed views
+- **People:** household membership and access roles
+- **Import and backup:** spreadsheet import, CSV/Excel export, and JSON backup
 
-The file is intentionally retained at `prototype/budget-dashboard-new.html`.
+## Storage options
 
-## Runtime modes
+The current application can work with local browser storage and also contains optional paths for a REST service or Firebase. Local storage is convenient for trying the application on one device; it should not be treated as secure shared production storage.
 
-1. **Local mode:** data is stored in the browser and is suitable for demonstrations and offline prototyping.
-2. **REST mode:** the prototype detects an API health endpoint and sends authenticated requests.
-3. **Firebase mode:** the prototype uses Firebase Auth and Firestore when configuration is supplied.
+## Visual identity
 
-## Phase 1 structure
+The application keeps its existing colours, typography, spacing, and layout style. Reusable colour values are recorded in [src/styles/tokens.css](../src/styles/tokens.css), and the H ∈ M mark is available in [src/assets/hm-logo.svg](../src/assets/hm-logo.svg).
 
-Phase 1 adds documentation, source-material preservation, reusable design tokens, and the H ∈ M SVG mark. It does not split or rewrite the prototype yet.
-
-## Future modularisation
-
-The approved incremental direction is to extract modules in this order:
-
-1. Domain types and schema validation
-2. Storage adapters
-3. Authentication and authorisation adapters
-4. Calculation and reporting functions
-5. UI rendering and event wiring
-6. Charts and import/export
-
-Each extraction should preserve existing behaviour and be covered by focused tests before the next extraction.
+Future improvements should strengthen the existing application instead of replacing its household-finance workflow unnecessarily.
 
